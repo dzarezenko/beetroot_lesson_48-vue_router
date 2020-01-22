@@ -3,7 +3,7 @@
     <h1>User Details</h1>
     <p>User ID: {{ id }}</p>
     <p>Property: {{ name }}</p>
-    <p>Query parameter: {{ $route.query.title }}</p>
+    <p>Query parameter: {{ title }}</p>
   </div>
 </template>
 
@@ -15,6 +15,11 @@ export default {
       default: 1,
     },
     name: String,
+  },
+  computed: {
+    title() {
+      return this.$route.query.title;
+    }
   }
 }
 </script>

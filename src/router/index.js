@@ -27,6 +27,12 @@ const routes = [
         path: '/user/:id',
         name: 'userDetails',
         component: UserDetails,
+        props: (route) => {
+          return {
+            id: route.params.id,
+            name: "Test",
+          }
+        },
       }
     ]
   }

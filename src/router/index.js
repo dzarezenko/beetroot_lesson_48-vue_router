@@ -22,13 +22,11 @@ const routes = [
     path: '/user',
     name: 'user',
     component: User,
-    children: [
-      {
-        path: '/user/:id',
-        name: 'userDetails',
-        component: UserDetails,
-      }
-    ]
+  },
+  {
+    path: '/user/:id',
+    name: 'userDetails',
+    component: UserDetails,
   }
 ]
 

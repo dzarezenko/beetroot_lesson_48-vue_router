@@ -2,7 +2,8 @@
   <div>
     <h1>User Details</h1>
     <p>User ID: {{ id }}</p>
-    <p>{{ name }}</p>
+    <p>Property: {{ name }}</p>
+    <p>Query parameter: {{ $route.query.title }}</p>
   </div>
 </template>
 

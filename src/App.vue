@@ -1,10 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <ul>
-        <router-link tag="li" to="/" active-class="active" exact><a>Home</a></router-link>
-        <router-link tag="li" to="/about" active-class="active"><a>About</a></router-link>
-      </ul>
+      <router-link tag="a" to="/" active-class="active" exact>Home</router-link> |
+      <router-link tag="a" to="/about" active-class="active">About</router-link>
     </div>
     <router-view/>
   </div>
@@ -28,7 +26,7 @@
   color: #2c3e50;
 }
 
-#nav li.active, #nav li.active a {
+#nav a.active {
   color: #42b983;
 }
 </style>

@@ -5,13 +5,20 @@ import About from '../views/About.vue'
 import User from '../components/user/User.vue'
 import UserDetails from '../components/user/UserDetails.vue'
 
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    components: {
+      default: Home,
+      'header': Header,
+      'footer': Footer,
+    }
   },
   {
     path: '/about',

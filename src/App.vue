@@ -1,11 +1,15 @@
 <template>
   <div id="app">
+    <router-view name="header" />
+
     <div id="nav">
       <router-link tag="a" :to="{ name: 'home' }" active-class="active" exact>Home</router-link> |
       <router-link tag="a" :to="{ name: 'about' }" active-class="active">About</router-link> |
       <router-link tag="a" :to="{ name: 'user' }" active-class="active">User</router-link>
     </div>
     <router-view/>
+
+    <router-view name="footer" />
   </div>
 </template>
 

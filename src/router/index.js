@@ -42,7 +42,15 @@ const routes = [
         },
       }
     ]
-  }
+  },
+  {
+    path: "/product",
+    redirect: { name: "user" },
+  },
+  {
+    path: "*",
+    redirect: { name: "home" },
+  },
 ]
 
 const router = new VueRouter({
